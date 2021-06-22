@@ -8,10 +8,10 @@
 
 function clicked(){
   var androidAccess = window.NativeAndroid;
-  if(androidAccess != "undefined" ){
-  alert(window.NativeAndroid.pasteFromClipboard())
+  if(androidAccess === undefined ){
+   alert("is not android ")
   }else{
-    alert("is not android ")
+    alert(window.NativeAndroid.pasteFromClipboard())
   }
 }
 </script>
